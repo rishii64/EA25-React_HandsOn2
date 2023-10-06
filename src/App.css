@@ -1,31 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form{
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.41);
+  width: 35rem;
+  height: 23em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
 }
+#btn{
+  width: 7em;
+  height: 2em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "JetBrains Mono",monospace;
+  padding: 0px 16px;
+  text-align: left;
+  font-size: 18px;
+}
+input{
+  width: 13rem;
+  height: 2.5em;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid;
+}
+#box{
+  border-top: 2px solid;
+  width: 90vw;
+  position: fixed;
+  top: 65%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* padding: 0px 10px; */
+  background: #b474fe9c;
+}
+#data{
+  display: flex;
+  gap: 15px;
+  width: 20rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #000000;
+  background: #FFC862;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
