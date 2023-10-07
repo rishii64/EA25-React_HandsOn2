@@ -15,7 +15,7 @@ body{
 .form{
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.41);
-  width: 35rem;
+  width: 45vw;
   height: 23em;
   display: flex;
   flex-direction: column;
@@ -58,25 +58,21 @@ input{
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  /* padding: 0px 10px; */
   background: #b474fe9c;
 }
 #data{
   display: flex;
   gap: 15px;
-  width: 20rem;
+  width: 25rem;
   height: 3rem;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 14px;
   background-color: #000000;
   background: #FFC862;
   border-radius: 5px;
   margin: 8px;
 }
-
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

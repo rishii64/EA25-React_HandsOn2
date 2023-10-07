@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-class React_FormCompo extends Component {
+class ReactFormCompo extends Component {
     constructor() {
         super()
         this.state = {
@@ -60,9 +60,8 @@ class React_FormCompo extends Component {
                     })}
                 </div>
             </form>
-            
             </>
         )
     }
 }
-export default React_FormCompo
+export default ReactFormCompo

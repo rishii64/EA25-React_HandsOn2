@@ -1,10 +1,10 @@
 import './App.css';
-import React_FormCompo from './React_Form';
+import ReactFormCompo from './ReactForm';
 
 function App() {
   return (
     <div className="App">
-      <React_FormCompo />
+      <ReactFormCompo />
     </div>
   );
 }
