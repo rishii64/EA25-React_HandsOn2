@@ -46,7 +46,7 @@ class ReactFormCompo extends Component {
                     <input type='number' name='rating' value={this.state.rating} placeholder="Enter your rating" onChange={this.handleChange} /> <br /> <br />
                 </div>
                 <button id="btn" onClick={this.handleSubmit}>Submit</button>
-
+            </form>
                 <div id="box">
                     {this.state.stuData.map((item, index) => {
                         console.log(item)
@@ -59,7 +59,6 @@ class ReactFormCompo extends Component {
                         )
                     })}
                 </div>
-            </form>
             </>
         )
     }
