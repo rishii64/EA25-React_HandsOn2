@@ -17,7 +17,7 @@ body{
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.41);
   width: 45vw;
-  height: 23em;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,8 +26,8 @@ body{
   margin: 10px auto;
 }
 #btn{
-  width: 13vw;
-  height: 2em;
+  width: 10vw;
+  height: 1.8em;
   border-radius: 5px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -35,13 +35,17 @@ body{
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
   color: #36395A;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-family: "JetBrains Mono",monospace;
   padding: 0px 16px;
   text-align: left;
   font-size: 18px;
+  margin: 20px;
+}
+label{
+  font-weight: 700;
 }
 input{
   width: 20vw;
@@ -49,17 +53,18 @@ input{
   border-radius: 20px;
   text-align: center;
   border: 1px solid;
+  outline: none;
 }
 #box{
-  border: 2px solid;
+  border: 1px solid;
   width: 90%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   background: #b474fe9c;
-  margin: 0 auto;
-  max-height: 230px;
+  margin: 10px auto;
+  max-height: 200px;
   overflow: hidden;
   overflow-y: auto;
 }
@@ -74,20 +79,41 @@ input{
   background-color: #000000;
   background: #FFC862;
   border-radius: 5px;
-  margin: 8px;
+  margin: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+p{
+  color: red;
+}
+@media screen and (max-width: 600px){
+  .form{
+    width: 90%;
+    height: 26em;
+    gap: 15px;
+  }
+  #head{
+    font-size: calc(15px + 1vw);
+  }
+  input{
+    width: 90%;
+    height: 28px;
+  }
+  label{
+    font-size: 15px;
+  }
+  #btn{
+    width: 40%;
+    font-size: 1em;
+  }
+  #box{
+    margin: 30px auto;
+    max-height: 213px;
+  }
+  span{
+    font-size: 10px;
   }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 950px){
+  #head{
+    font-size: calc(15px + 1vw);
   }
 }
